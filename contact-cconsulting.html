@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Contact - C CONSULTING</title>
+<!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Libre+Franklin&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="responsive-cconsulting.css">
+
+  <style>
+    body {
+      padding-top: 80px;
+      margin: 0;
+      font-family: 'Libre Franklin', sans-serif;
+      background-color: #f4f1ea;
+      color: #1a1a1a;
+      line-height: 1.8;
+    }
+
+    nav {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px;
+      background-color: rgba(31, 78, 121, 0.7);
+      padding: 10px 20px;
+      border-radius: 25px;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      opacity: 1;
+      transition: opacity 0.4s ease;
+    }
+
+    nav.transparent {
+      opacity: 0.3;
+    }
+
+    nav:hover {
+      opacity: 1 !important;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #cce0f5;
+    }
+
+    header {
+      background: url('Carte du monde boussole.png') center 0px/cover no-repeat;
+      background-color: #1f4e79;
+      color: white;
+      padding: 120px 20px 80px;
+      text-align: center;
+      position: relative;
+    }
+
+    header img.logo {
+  z-index: 1001;
+  position: fixed;
+  top: 95px;
+  left: 30px;
+  height: 110px;
+  width: auto; /* Assure le respect du ratio largeur/hauteur naturel */
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.6); /* Blanc léger et translucide */
+  padding: 4px;
+  border-radius: 10px;
+  transition: opacity 0.5s ease;
+}
+
+
+    .logo.transparent {
+      opacity: 0.3;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6em;
+    }
+
+    section {
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+      font-family: 'Libre Franklin', sans-serif;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #1f4e79;
+      color: white;
+      font-size: 1em;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #163b5d;
+      transform: scale(1.02);
+    }
+
+    .infos {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1.1em;
+    }
+
+    .infos p {
+      margin: 10px 0;
+    }
+
+    .infos a {
+      color: #1f4e79;
+      text-decoration: none;
+    }
+
+    .infos a:hover {
+      text-decoration: underline;
+    }
+/* === Menu burger === */
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1100;
+  background-color: #1f4e79;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 770px) {
+  nav#nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(31, 78, 121, 0.9);
+    padding: 20px;
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    z-index: 1000;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav#nav-menu a {
+    display: block;
+    color: white;
+    padding: 10px 0;
+    font-size: 1.1em;
+    text-decoration: none;
+  }
+
+  nav#nav-menu a:hover {
+    text-decoration: underline;
+    color: #cce0f5;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+  <img src="logo-c-consulting.png" alt="Logo C CONSULTING" class="logo" />
+
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <nav id="nav-menu">
+    <a href="index.html">Accueil</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="offres-cconsulting.html">Offres</a>
+    <a href="contact-cconsulting.html">Contact</a>
+    <a href="cas-clients.html">Cas clients</a>
+    <a href="mentions-legales.html">Mentions</a>
+  </nav>
+    <h1>Contact</h1>
+    <p>Un projet, une question ou une envie d'avancer ? Écrivez-moi.</p>
+  </header>
+
+  <section>
+    <h2>Formulaire de contact</h2>
+    <form action="https://formspree.io/f/mqaqzlpv" method="POST">
+      <label for="name">Nom :</label>
+      <input id="name" name="name" required type="text"/>
+      <label for="email">Adresse email :</label>
+      <input id="email" name="email" required type="email"/>
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" required rows="6"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <div class="infos">
+      <p>📧 <a href="mailto:cimota00@hotmail.com">cimota00@hotmail.com</a></p>
+      <p>📞 <a href="tel:+33699777581">06 99 77 75 81</a></p>
+      <p>📍 Basé à Nantes – Interventions France & International</p>
+    </div>
+  </section>
+
+  <script>
+    const logo = document.querySelector('.logo');
+    const header = document.querySelector('header');
+    const nav = document.querySelector('nav');
+
+    function updateLogoOpacity() {
+      const scrollY = window.scrollY;
+      const headerBottom = header.offsetTop + header.offsetHeight;
+      const docHeight = document.documentElement.scrollHeight;
+      const winHeight = window.innerHeight;
+
+      if (scrollY > headerBottom - 120 && scrollY + winHeight < docHeight - 10) {
+        logo.classList.add('transparent');
+      } else {
+        logo.classList.remove('transparent');
+      }
+    }
+
+    function updateNavOpacity() {
+      if (window.scrollY > 100) {
+        nav.classList.add('transparent');
+      } else {
+        nav.classList.remove('transparent');
+      }
+    }
+
+    window.addEventListener('scroll', () => {
+      updateLogoOpacity();
+      updateNavOpacity();
+    });
+
+    window.addEventListener('load', () => {
+      updateLogoOpacity();
+      updateNavOpacity();
+    });
+
+    let ticking = false;
+    function updateParallax() {
+      const offset = -(window.scrollY * 0.4);
+      header.style.backgroundPosition = 'center ' + offset + 'px';
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        window.requestAnimationFrame(updateParallax);
+        ticking = true;
+      }
+    });
+  </script>
+<!-- ✅ Script du menu burger -->
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    toggleButton.addEventListener('click', () => {
+      if (navMenu.style.display === 'flex') {
+        navMenu.style.display = 'none';
+      } else {
+        navMenu.style.display = 'flex';
+      }
+    });
+  </script>
+
+</body>
+</html>
