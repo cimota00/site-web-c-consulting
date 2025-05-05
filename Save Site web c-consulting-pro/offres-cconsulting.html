@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Offres - C CONSULTING</title>
+<!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Libre+Franklin&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="responsive-cconsulting.css">
+  <style>
+    body {
+  padding-top: 80px;
+  margin: 0;
+  font-family: 'Libre Franklin', sans-serif;
+  background: linear-gradient(135deg, #f0f6fb 0%, #d3e5f1 100%);
+  color: #1a1a1a;
+  line-height: 1.8;
+}
+
+    header {
+      background: url('Carte du monde boussole.png') center 0px/cover no-repeat;
+      background-color: #1f4e79;
+      color: white;
+      padding: 140px 20px 80px;
+      text-align: center;
+      position: relative;
+    }
+
+    header img.logo {
+  z-index: 1001;
+  position: fixed;
+  top: 95px;
+  left: 30px;
+  height: 110px;
+  width: auto; /* Assure le respect du ratio largeur/hauteur naturel */
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.6); /* Blanc léger et translucide */
+  padding: 4px;
+  border-radius: 10px;
+  transition: opacity 0.5s ease;
+}
+
+
+    .logo.transparent {
+      opacity: 0.3;
+    }
+
+    nav {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px;
+      background-color: rgba(31, 78, 121, 0.7);
+      padding: 10px 20px;
+      border-radius: 25px;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      opacity: 1;
+      transition: opacity 0.4s ease;
+    }
+
+    nav.transparent {
+      opacity: 0.3;
+    }
+
+    nav:hover {
+      opacity: 1 !important;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #cce0f5;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6em;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: #1f4e79;
+      border-bottom: 2px solid #1f4e79;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    section h3 {
+      font-size: 1.2em;
+      margin-top: 25px;
+      color: #3b4a57;
+    }
+
+    section p {
+      font-size: 1.05em;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .offre {
+      margin-bottom: 60px;
+      padding-bottom: 30px;
+      background-color: #ffffffaa;
+      border-left: 4px solid #1f4e79;
+      padding-left: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+/* === Menu burger === */
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1100;
+  background-color: #1f4e79;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 770px) {
+  nav#nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(31, 78, 121, 0.9);
+    padding: 20px;
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    z-index: 1000;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav#nav-menu a {
+    display: block;
+    color: white;
+    padding: 10px 0;
+    font-size: 1.1em;
+    text-decoration: none;
+  }
+
+  nav#nav-menu a:hover {
+    text-decoration: underline;
+    color: #cce0f5;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+   <!-- ✅ Menu burger -->
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav id="nav-menu">
+      <a href="index.html">Accueil</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="offres-cconsulting.html">Offres</a>
+      <a href="contact-cconsulting.html">Contact</a>
+      <a href="cas-clients.html">Cas clients</a>
+      <a href="mentions-legales.html">Mentions</a>
+    </nav>
+    <img alt="Logo C CONSULTING" class="logo" src="logo-c-consulting.png"/>
+    <h1>Mes Offres</h1>
+    <p>Chaque accompagnement est construit sur-mesure, sans jargon, sans format figé, et toujours en lien avec la réalité du terrain.</p>
+  </header>
+
+  <section>
+  <div class="offre">
+    <h2>Reprendre le contrôle</h2>
+    <p><strong>Clarifier son cap et retrouver un pilotage stratégique efficace</strong></p>
+    <p>Pour les dirigeants de TPE, PME ou ETI qui souhaitent clarifier leur cap, repositionner leurs priorités et retrouver de la maîtrise sur leur pilotage.<br>
+    Idéal lors d’une restructuration, d’une reprise, d’une réorganisation ou d’une phase de croissance.</p>
+    <h3>🔍 Objectif</h3>
+    <p>Un accompagnement court, lucide et utile, dans une logique de recentrage, de projection ou de transition.</p>
+    <h3>📐 Format</h3>
+    <p>▪ Audit express (1 à 3 jours sur site ou à distance)<br>
+       ▪ Restitution courte, concrète, engageante<br>
+       ▪ Suivi ponctuel (1 à 3 mois) si souhaité</p>
+    <h3>🎯 Résultats concrets</h3>
+    <p>▪ Une vision clarifiée et structurée<br>
+       ▪ Des priorités opérationnelles identifiées<br>
+       ▪ Un plan d’action cohérent et mobilisateur</p>
+  </div>
+
+  <div class="offre">
+    <h2>Fédérer sans fioritures</h2>
+    <p><strong>(Re)construire une équipe commerciale soudée et performante</strong></p>
+    <p>Pour les managers commerciaux qui veulent renforcer la cohésion, restaurer la confiance ou poser les bases d’un collectif plus structuré.<br>
+    Particulièrement utile lors d’une prise de poste, d’un changement d’équipe ou d’un moment de crise commerciale.</p>
+    <h3>🔍 Objectif</h3>
+    <p>Intervenir sans filtre ni posture artificielle, pour adresser les vrais sujets humains et opérationnels.</p>
+    <h3>📐 Format</h3>
+    <p>▪ Observation sur le terrain ou ateliers (1 à 2 jours)<br>
+       ▪ Travail avec le manager en appui (et non en opposition)<br>
+       ▪ Outils de cadrage ou de communication si nécessaire</p>
+    <h3>🎯 Résultats concrets</h3>
+    <p>▪ Une dynamique collective relancée<br>
+       ▪ Une posture managériale renforcée<br>
+       ▪ Un climat d’équipe clarifié et plus serein</p>
+  </div>
+
+  <div class="offre">
+    <h2>Structurer l'import-export</h2>
+    <p><strong>Sécuriser et développer vos échanges entre Afrique, Europe et Asie</strong></p>
+    <p>Pour les entreprises opérant entre l’Afrique de l’Ouest, l’Europe et l’Asie, qui veulent fiabiliser leurs échanges ou structurer leur développement international.</p>
+    <h3>🔍 Objectif</h3>
+    <p><strong>Professionnaliser vos échanges internationaux</strong> en remplaçant les opportunités isolées par une stratégie claire, sécurisée et adaptée à vos enjeux.</p>
+    <h3>📐 Format</h3>
+    <p>▪ Diagnostic et priorisation (1 à 2 jours terrain ou distanciel)<br>
+       ▪ Sécurisation des actions déjà en cours<br>
+       ▪ Préconisations à valeur ajoutée, pas un catalogue standard</p>
+    <h3>🎯 Résultats concrets</h3>
+    <p>▪ Une feuille de route claire pour vos flux internationaux<br>
+       ▪ Des partenaires et circuits mieux structurés<br>
+       ▪ Moins d’imprévus, plus de rentabilité</p>
+  </div>
+
+  <div class="offre">
+    <h2>Mon approche</h2>
+    <p>Chez <strong>C CONSULTING</strong>, je ne propose pas de conseil hors-sol.</p>
+    <p>Mon accompagnement s’adresse à des dirigeants, managers ou entrepreneurs confrontés à des phases de bascule, de doute ou de transition. J’interviens avec lucidité, sans détour, pour clarifier les priorités, remettre de l’ordre dans l’action, et restaurer de la maîtrise.</p>
+    <p>Mon approche est <strong>personnalisée</strong>, <strong>opérationnelle</strong>, et <strong>basée sur 15 ans de vécu terrain</strong> dans des contextes complexes (Afrique, Europe, enjeux humains et commerciaux).</p>
+  </div>
+</section>
+
+
+  <script>
+    const logo = document.querySelector('.logo');
+    const header = document.querySelector('header');
+    const nav = document.querySelector('nav');
+
+    function updateLogoOpacity() {
+      const scrollY = window.scrollY;
+      const headerBottom = header.offsetTop + header.offsetHeight;
+      const docHeight = document.documentElement.scrollHeight;
+      const winHeight = window.innerHeight;
+
+      if (scrollY > headerBottom - 120 && scrollY + winHeight < docHeight - 10) {
+        logo.classList.add('transparent');
+      } else {
+        logo.classList.remove('transparent');
+      }
+    }
+
+    function updateNavOpacity() {
+      if (window.scrollY > 100) {
+        nav.classList.add('transparent');
+      } else {
+        nav.classList.remove('transparent');
+      }
+    }
+
+    window.addEventListener('scroll', () => {
+      updateLogoOpacity();
+      updateNavOpacity();
+    });
+
+    window.addEventListener('load', () => {
+      updateLogoOpacity();
+      updateNavOpacity();
+    });
+
+    let ticking = false;
+    function updateParallax() {
+      const offset = -(window.scrollY * 0.4);
+      header.style.backgroundPosition = 'center ' + offset + 'px';
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        window.requestAnimationFrame(updateParallax);
+        ticking = true;
+      }
+    });
+  </script>
+<!-- ✅ Script du menu burger -->
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    toggleButton.addEventListener('click', () => {
+      if (navMenu.style.display === 'flex') {
+        navMenu.style.display = 'none';
+      } else {
+        navMenu.style.display = 'flex';
+      }
+    });
+  </script>
+
+</body>
+</html>

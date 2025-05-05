@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>C CONSULTING – David Pechlivanian</title>
+
+  <!-- 🟡 Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <!-- ✅ CSS Responsive -->
+  <link rel="stylesheet" href="responsive-cconsulting.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Libre+Franklin&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      padding-top: 80px;
+      margin: 0;
+      font-family: 'Libre Franklin', sans-serif;
+      background-color: #f4f1ea;
+      color: #1a1a1a;
+      line-height: 1.8;
+    }
+
+    nav {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px;
+      background-color: rgba(31, 78, 121, 0.7);
+      padding: 10px 20px;
+      border-radius: 25px;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      opacity: 1;
+      transition: opacity 0.4s ease;
+    }
+
+    nav.transparent {
+      opacity: 0.3;
+    }
+
+    nav:hover {
+      opacity: 1 !important;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #cce0f5;
+    }
+
+    header {
+      background: url('Carte du monde boussole.png') center 0px/cover no-repeat;
+      background-color: #1f4e79;
+      color: white;
+      padding: 120px 20px 80px;
+      text-align: center;
+      position: relative;
+    }
+
+    header img.logo {
+      z-index: 1001;
+      position: fixed;
+      top: 95px;
+      left: 30px;
+      height: 110px;
+      opacity: 1;
+      background-color: rgba(244, 241, 234, 0.7);
+      padding: 4px;
+      border-radius: 10px;
+      transition: opacity 0.5s ease;
+    }
+
+    .logo.transparent {
+      opacity: 0.3;
+    }
+
+    header h1 {
+      font-size: 3em;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3em;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.8em;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #1f4e79;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    section p {
+      font-size: 1.1em;
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 40px;
+      background-color: #1f4e79;
+      color: white;
+      padding: 12px 30px;
+      font-weight: bold;
+      font-size: 1em;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .cta-button:hover {
+      background-color: #163b5d;
+      transform: scale(1.03);
+    }
+/* === Menu burger === */
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1100;
+  background-color: #1f4e79;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 770px) {
+  nav#nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(31, 78, 121, 0.9);
+    padding: 20px;
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    z-index: 1000;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav#nav-menu a {
+    display: block;
+    color: white;
+    padding: 10px 0;
+    font-size: 1.1em;
+    text-decoration: none;
+  }
+
+  nav#nav-menu a:hover {
+    text-decoration: underline;
+    color: #cce0f5;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <img alt="Logo C CONSULTING" class="logo" src="logo-c-consulting.png"/>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+<nav id="nav-menu">
+  <a href="index.html">Accueil</a>
+  <a href="a-propos.html">À propos</a>
+  <a href="offres-cconsulting.html">Offres</a>
+  <a href="contact-cconsulting.html">Contact</a>
+  <a href="cas-clients.html">Cas clients</a>
+  <a href="mentions-legales.html">Mentions</a>
+</nav>
+
+
+    <h1>Consultant hors-case</h1>
+    <p>Ni formateur standard, ni stratège hors-sol. J'interviens là où il faut remettre de la clarté, du cap, et du sens. Avec méthode, exigence, et l'appui d'une expérience vécue — pas simplement étudiée.</p>
+    <hr style="width: 60px; border: 2px solid white; margin: 40px auto;">
+  </header>
+
+  <section>
+    <h2>C CONSULTING</h2>
+    <p>C CONSULTING est né d'une conviction : les meilleures stratégies prennent racine dans la réalité du terrain. Je conçois des accompagnements sur-mesure pour celles et ceux qui agissent dans des environnements mouvants, complexes, et exigeants. 
+    Ce cabinet, je l'ai pensé à mon image : rigoureux, humain, et aligné avec les enjeux du monde réel.</p>
+    <hr style="width: 60px; border: 2px solid white; margin: 40px auto;">
+    <a class="cta-button" href="offres-cconsulting.html">Découvrir mes offres</a>
+  </section>
+
+  <script>
+    const logo = document.querySelector('.logo');
+    const header = document.querySelector('header');
+    const nav = document.querySelector('nav');
+
+    function updateLogoOpacity() {
+      const scrollY = window.scrollY;
+      const headerBottom = header.offsetTop + header.offsetHeight;
+      const docHeight = document.documentElement.scrollHeight;
+      const winHeight = window.innerHeight;
+
+      if (scrollY > headerBottom - 120 && scrollY + winHeight < docHeight - 10) {
+        logo.classList.add('transparent');
+      } else {
+        logo.classList.remove('transparent');
+      }
+    }
+
+    function updateNavOpacity() {
+      if (window.scrollY > 100) {
+        nav.classList.add('transparent');
+      } else {
+        nav.classList.remove('transparent');
+      }
+    }
+
+    window.addEventListener('scroll', () => {
+      updateLogoOpacity();
+      updateNavOpacity();
+    });
+
+    window.addEventListener('load', () => {
+      updateLogoOpacity();
+      updateNavOpacity();
+    });
+
+    let ticking = false;
+    function updateParallax() {
+      const offset = -(window.scrollY * 0.4);
+      header.style.backgroundPosition = 'center ' + offset + 'px';
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        window.requestAnimationFrame(updateParallax);
+        ticking = true;
+      }
+    });
+  </script>
+ <!-- ✅ Script du menu burger -->
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    toggleButton.addEventListener('click', () => {
+      if (navMenu.style.display === 'flex') {
+        navMenu.style.display = 'none';
+      } else {
+        navMenu.style.display = 'flex';
+      }
+    });
+  </script>
+</body>
+</html>

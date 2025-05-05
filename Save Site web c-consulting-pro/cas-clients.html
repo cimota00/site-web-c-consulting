@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos - C CONSULTING</title>
+<!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Libre+Franklin&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="responsive-cconsulting.css">
+  <style>
+    /* Style inchangé issu de ton a-propos.html */
+
+body {
+  padding-top: 80px;
+  margin: 0;
+  font-family: 'Libre Franklin', sans-serif;
+  background: linear-gradient(135deg, #f0f6fb 0%, #d3e5f1 100%);
+  color: #1a1a1a;
+  line-height: 1.8;
+}
+
+    nav {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px;
+      background-color: rgba(31, 78, 121, 0.7);
+      padding: 10px 20px;
+      border-radius: 25px;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    nav:hover {
+      background-color: rgba(31, 78, 121, 1);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #cce0f5;
+    }
+    header {
+      background: url('Carte du monde boussole.png') center 5px/cover no-repeat;
+      background-color: #1f4e79;
+      color: white;
+      padding: 100px 20px 130px;
+      text-align: center;
+      position: relative;
+    }
+    header img.logo {
+      z-index: 1001;
+      position: fixed;
+      top: 95px;
+      left: 30px;
+      height: 110px;
+      opacity: 1;
+      background-color: rgba(244, 241, 234, 0.7);
+      padding: 4px;
+      border-radius: 10px;
+      transition: opacity 0.5s ease;
+    }
+    .logo.transparent {
+      opacity: 0.3;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6em;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #1f4e79;
+      display: inline-block;
+      padding-bottom: 5px;
+      position: relative;
+    }
+    section h2::after {
+      content: '';
+      display: block;
+      height: 4px;
+      width: 60px;
+      background-color: #1f4e79;
+      margin-top: 10px;
+    }
+    section p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+    .highlight {
+      background-color: #ffffffaa;
+      padding: 20px;
+      border-left: 4px solid #1f4e79;
+      margin-bottom: 40px;
+    }
+    .signature {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4em;
+      text-align: right;
+      margin-top: 60px;
+      font-style: italic;
+    }
+/* === Menu burger === */
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1100;
+  background-color: #1f4e79;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 770px) {
+  nav#nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(31, 78, 121, 0.9);
+    padding: 20px;
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    z-index: 1000;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav#nav-menu a {
+    display: block;
+    color: white;
+    padding: 10px 0;
+    font-size: 1.1em;
+    text-decoration: none;
+  }
+
+  nav#nav-menu a:hover {
+    text-decoration: underline;
+    color: #cce0f5;
+  }
+}
+
+  </style>
+</head>
+
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="logo-c-consulting.png" alt="Logo C CONSULTING">
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+<nav id="nav-menu">
+  <a href="index.html">Accueil</a>
+  <a href="a-propos.html">À propos</a>
+  <a href="offres-cconsulting.html">Offres</a>
+  <a href="contact-cconsulting.html">Contact</a>
+  <a href="cas-clients.html">Cas clients</a>
+  <a href="mentions-legales.html">Mentions</a>
+</nav>
+
+    <h1>Cas Clients</h1>
+    <p class="intro">C CONSULTING intervient aussi bien à l’international que sur des missions locales. Voici quelques exemples concrets d’accompagnements réalisés auprès de dirigeants, managers ou équipes terrain.</p>
+  </header>
+
+  <section class="case-block">
+  <h2>🌍 Groupe agro-industriel – Supply Chain Export café/cacao (Afrique → Europe)</h2>
+  <ul>
+    <li><strong>Client :</strong> Groupe agro-industriel – 25 employés</li>
+    <li><strong>Contexte :</strong> Pilotage complet d’un projet d’exportation de produits agricoles (café, cacao), de la récolte jusqu’à l’embarquement portuaire</li>
+    <li><strong>Approche :</strong> Supervision de la chaîne d'approvisionnement locale ; coordination des opérations de pré-acheminement ; gestion documentaire export ; interface logistique jusqu’à l’embarquement</li>
+    <li><strong>Livrables :</strong> Supply chain conforme aux standards internationaux ; sécurisation des flux physiques et documentaires ; optimisation des délais et des coûts logistiques</li>
+  </ul>
+</section>
+
+
+  <section class="case-block">
+  <h2>🏭 PME – Diagnostic RH et Mise en Conformité Contractuelle</h2>
+  <ul>
+    <li><strong>Client :</strong> Entreprise spécialisée dans le débosselage automobile, certifiée ISO 9001</li>
+    <li><strong>Contexte :</strong> Anomalies statutaires non détectées en interne, révélées à l'occasion d'une mission d'audit ciblé</li>
+    <li><strong>Approche :</strong> Diagnostic approfondi des statuts contractuels au regard des obligations opérationnelles ; identification des risques ; élaboration d'un plan d'alignement conforme</li>
+    <li><strong>Livrables :</strong> Rapport d'audit détaillé, préconisations de régularisation contractuelle, plan d'action visant à sécuriser les pratiques RH et prévenir d'éventuelles sanctions administratives et financières</li>
+  </ul>
+</section>
+
+
+
+  <section class="case-block">
+  <h2>👥 TPE BtoB – Optimisation de l'efficacité opérationnelle</h2>
+  <ul>
+    <li><strong>Client :</strong> Fleuriste événementiel en BtoB – 5 salariés permanents</li>
+    <li><strong>Contexte :</strong> Besoin d’optimiser les opérations de décoration lors d'une forte montée en charge pour la période des fêtes de fin d’année (recrutement de 3 renforts saisonniers)</li>
+    <li><strong>Approche :</strong> Analyse des méthodes de travail existantes et transmission d'une solution pragmatique pour fluidifier les installations complexes en autonomie</li>
+    <li><strong>Livrables :</strong> Amélioration immédiate de la productivité : réduction de 50 % du temps nécessaire pour la mise en place des décors événementiels</li>
+  </ul>
+</section>
+<section class="case-block">
+  <h2>🏦 Institution financière – Structuration de la performance commerciale en assurance vie</h2>
+  <ul>
+    <li><strong>Client :</strong> Réseau de conseillers spécialisés en assurance vie patrimoniale</li>
+    <li><strong>Contexte :</strong> Besoin d’optimiser les processus de vente dans un environnement fiscal spécifique </li>
+    <li><strong>Approche :</strong> Déploiement d’une méthodologie structurée visant à renforcer la performance commerciale : cadrage des entretiens, hiérarchisation des besoins clients, sécurisation du conseil patrimonial</li>
+    <li><strong>Livrables :</strong> Augmentation mesurable du taux de transformation, amélioration de la qualité des recommandations clients, valorisation du potentiel de gain pour les équipes</li>
+  </ul>
+</section>
+
+
+  <div style="text-align: center;">
+    <a href="contact-cconsulting.html" class="cta-button">Me contacter</a>
+  </div>
+
+  <script>
+    const logo = document.querySelector('.logo');
+    const header = document.querySelector('header');
+    const nav = document.querySelector('nav');
+
+    function updateLogoOpacity() {
+      const scrollY = window.scrollY;
+      const headerBottom = header.offsetTop + header.offsetHeight;
+      const docHeight = document.documentElement.scrollHeight;
+      const winHeight = window.innerHeight;
+
+      if (scrollY > headerBottom - 120 && scrollY + winHeight < docHeight - 10) {
+        logo.classList.add('transparent');
+      } else {
+        logo.classList.remove('transparent');
+      }
+    }
+
+    function updateNavOpacity() {
+      if (window.scrollY > 100) {
+        nav.classList.add('transparent');
+      } else {
+        nav.classList.remove('transparent');
+      }
+    }
+
+    window.addEventListener('scroll', () => {
+      updateLogoOpacity();
+      updateNavOpacity();
+    });
+
+    window.addEventListener('load', () => {
+      updateLogoOpacity();
+      updateNavOpacity();
+    });
+
+    let ticking = false;
+    function updateParallax() {
+      const offset = -(window.scrollY * 0.4);
+      header.style.backgroundPosition = 'center ' + offset + 'px';
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        window.requestAnimationFrame(updateParallax);
+        ticking = true;
+      }
+    });
+  </script>
+<!-- ✅ Script du menu burger -->
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    toggleButton.addEventListener('click', () => {
+      if (navMenu.style.display === 'flex') {
+        navMenu.style.display = 'none';
+      } else {
+        navMenu.style.display = 'flex';
+      }
+    });
+  </script>
+
+</body>
+</html>
